@@ -1,17 +1,26 @@
 
-number = int(input('ввести число -->  '))
+number = int(input('введите число -->  '))
 
-##d = 0
+x = -1
 
 def guess(number):
+    global x
     if number == 1:
         return number
     else:
         for i in range(number):
+            x = x + 1
             if i * i == number:
                 y = i
-##                d += 1
+##                x = x + 1
+##                print(x)
                 return y
+            elif i * i != number & x == i:
+##                print(x)
+##                print(i)
+                c = "Трудно, не могу вычислить корень"
+                return c
+                
 ##            elif d == number :
 ##                print("такого корня нет")
 ##            else:
