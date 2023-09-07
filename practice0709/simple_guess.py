@@ -4,7 +4,7 @@ number = int(input('введите число -->  '))
 x = -1
 
 def guess(number):
-    global x
+    global x ## долго ломал голову, как же быть с переменными, так как доступ к локальной ограничен, нашел полезное для себя решение по этой ссылке https://thecode.media/unboundlocalerror/ 
     if number == 1:
         return number
     else:
