@@ -1,19 +1,26 @@
 
-number: int = input('ввести число')
-x: int = number
-#def (
-#    )
+number = int(input('ввести число -->  '))
 
-def guess (x):
-    while i == 0:
-        else:
-            for q in range(number):
-                if q * q == number:
-                    i = 1
-                    return q
+##d = 0
+
+def guess(number):
+    if number == 1:
+        return number
+    else:
+        for i in range(number):
+            if i * i == number:
+                y = i
+##                d += 1
+                return y
+##            elif d == number :
+##                print("такого корня нет")
+##            else:
+##                y: str = 'такого корня нет'
+##                return y
+
                     
-                                        
-
-print(x)
+                                          
+w = guess(number)
+print(w)
                 
             
