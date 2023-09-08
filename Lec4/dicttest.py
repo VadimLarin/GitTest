@@ -6,5 +6,6 @@ alph = {
     10: 'Y',
 }
 
-print(alph[3])
-;
+for key, value in alph.items(): 
+    if value in 'AY|':
+        print(f'ключ: {key} значение: {value}')

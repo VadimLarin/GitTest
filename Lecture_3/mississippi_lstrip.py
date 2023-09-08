@@ -1,7 +1,7 @@
-#river: str = "mmmmmississippi"
-words: str = "<!---das das das---!>"
+river: str = "mmmmmississippi"
+##words: str = "<!---das das das---!>"
 
 print(
-    #"m" + river.lstrip("m")
-    words.strip('<!>-').split()
+    "m" + river.lstrip("m")
+    ##words.strip('<!>-').split()
 )
