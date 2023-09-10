@@ -1,4 +1,4 @@
-from FirstRace import RACE_DATA
+from import_this import RACE_DATA
 
 def time_h_m(FinishedTimeSeconds: str) -> str:
     time_hour = str(FinishedTimeSeconds // 3600)
@@ -37,7 +37,7 @@ for i in range(3):
             another_winner += str(f"\t\tИмя: {i.get('RacerName')}\n")
             another_winner += str(f"\t\tКоманда: {i.get('RacerTeam')}\n")
             winners_time = time_h_m(i.get('FinishedTimeSeconds',0))
-            another_winner += str(f"\t\tВремя: {another_winner[0]}:{another_winner[1]}:{another_winner[2]}\n")
+            another_winner += str(f"\t\tВремя: {winners_time[0]}:{winners_time[1]}:{winners_time[2]}\n")
 
     print(another_winner)
             

@@ -14,9 +14,3 @@ def elements(N):
     
     
 print(elements([1, 2, 3, 4]))
-
-
-
-
-
-
